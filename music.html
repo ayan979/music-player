@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akon Music Player</title>
+    <link rel="stylesheet" href="song.css">
+</head>
+<body>
+    <h1>Akon Music Player</h1>
+    <audio id="audio" controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <div class="controls">
+        <button onclick="playAudio()">Play</button>
+        <button onclick="pauseAudio()">Pause</button>
+        <button onclick="stopAudio()">Stop</button>
+    </div>
+
+    <div class="song-list">
+        <button onclick="changeSong('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3')">Smack That</button>
+        <button onclick="changeSong('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3')">Lonely</button>
+        <button onclick="changeSong('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3')">I Wanna Love You</button>
+    </div>
+
+    <script src="lyric.js"></script>
+</body>
+</html>
